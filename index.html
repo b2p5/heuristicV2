@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  
+  <script  src="https://cdn.JsDelivr.net/npm/p5"></script>
+  <script  src="https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.dom.min.js"> </script> 
+  <script  src="https://unpkg.com/axios/dist/axios.min.js"> </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js" 
+    integrity="sha512-UnrKxsCMN9hFk7M56t4I4ckB4N/2HHi0w/7+B/1JsXIX3DmyBcsGpT3/BsuZMZf+6mAr0vP81syWtfynHJ69JA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.bare.js" 
+    integrity="sha512-SiHaVty+Z5mm0yoLc2VfLOB6+HMnqbAervEr0hFvmMjeeozy/6h8IZc02go+Yc2rV8pBBknDRO3dFgto5q9jAA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" 
+    integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+  </script>
+
+  <script src="./clases/conex.js"></script>
+  <script src="./clases/heuristic.js"></script>
+  <script src="./clases/generaExcel.js"></script>
+  <script src="./clases/bolas.js"></script> 
+   
+  <script src="./html-p5.js"></script>
+
+  <link rel="stylesheet" href="./assets/miEstilo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  <div id="container">
+    <div id="logo">
+      <img  src="./media/logo.png" width="40" height="40">
+    </div>
+    <div id="titulo">
+      <h3>Análisis Heurístico de Bloques.</h3>
+    </div>
+    <div id="bloque">
+     <input type="submit"   value="<"    onclick="goPrev()">
+     <input id  ="txtData"  type ="text" size   ="74"      placeholder="Enter bock here." />
+     <input type="submit"   value=">"    onclick="goPost()">
+     <input type="submit"   value=">>"   onclick="goLast()">
+     <input type="submit"   value="Go"   onclick="getBlock()">
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

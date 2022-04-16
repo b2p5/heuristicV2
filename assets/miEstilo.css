@@ -1,0 +1,31 @@
+#container {
+    height: 45px;
+    width: 100%;
+    /* margin-top: 0px; */
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+#logo {
+  width: 5%;
+  height: 45px;
+}
+#logo image {
+    margin-top: 0px;
+}
+
+#titulo {
+  width: 40%;
+  height: 45px;
+  margin-top: 5px;
+  text-align: center;
+  
+}
+#titulo h3 {
+    margin-top: 0px;
+    font-weight: bold;
+}
+#bloque {
+  width: 55%;
+  height: 45px;
+  margin-top: 5px;
+}
